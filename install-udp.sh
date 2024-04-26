@@ -10,11 +10,11 @@ ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 # install udp-custom
 echo downloading udp-custom
-wget -q "https://raw.githubusercontent.com/masjeho2/vpn-store/main/udp-custom" -O /root/udp/udp-custom
+wget -q "https://raw.githubusercontent.com/masjeho2/ssh-udp/main/udp-custom" -O /root/udp/udp-custom
 chmod +x /root/udp/udp-custom
 
 echo downloading default config
-wget -q "https://raw.githubusercontent.com/masjeho2/vpn-store/main/config.json" -O /root/udp/config.json
+wget -q "https://raw.githubusercontent.com/masjeho2/ssh-udp/main/config.json" -O /root/udp/config.json
 chmod 644 /root/udp/config.json
 
 if [ -z "$1" ]; then
